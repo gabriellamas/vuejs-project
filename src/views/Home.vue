@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>👍 Compre ou venda 👎</h1>
+    <h1>🤝 Compre ou venda 🤝</h1>
     <ProdutosBuscar />
     <ProdutosLista />
   </div>
