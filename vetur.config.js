@@ -7,6 +7,9 @@ module.exports = {
   settings: {
     "vetur.useWorkspaceDependencies": true,
     "vetur.experimental.templateInterpolationService": true,
+    "emmet.syntaxProfiles": {
+      "vue-html": "html",
+    },
   },
   // **optional** default: `[{ root: './' }]`
   // support monorepos
