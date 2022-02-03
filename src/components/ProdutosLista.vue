@@ -15,17 +15,30 @@
 
 <script>
 import { api } from "@/services";
+import { serialize } from "@/helpers";
 export default {
   data() {
     return {
       products: null,
+      productsPerPage: 9,
     };
+  },
+  computed: {
+    url() {
+      const query = serialize(this.$route.query);
+      return `/produto?_limit=${this.productsPerPage}${query}`;
+    },
   },
   methods: {
     getProducts() {
-      api.get("/produto").then((response) => {
+      api.get(this.url).then((response) => {
         this.products = response.data;
       });
+    },
+  },
+  watch: {
+    url() {
+      this.getProducts();
     },
   },
   created() {
