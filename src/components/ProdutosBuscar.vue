@@ -13,7 +13,6 @@
       value="Buscar"
       @click.prevent="buscarProdutos"
     />
-    <input type="text" />
   </form>
 </template>
 
