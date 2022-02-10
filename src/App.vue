@@ -39,6 +39,12 @@ p {
   padding: 0px;
 }
 
+label {
+  margin-bottom: 5px;
+}
+button {
+  border: none;
+}
 ul {
   list-style: none;
 }
@@ -63,13 +69,15 @@ img {
   display: block;
   padding: 10px 30px;
   background: #87f;
-  color: #fff;
   border-radius: 4px;
+  color: #fff;
+  text-align: center;
   font-size: 1rem;
   box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+  transition: all 0.3s;
+  border: none;
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   cursor: pointer;
-  text-align: center;
 }
 
 .btn:hover {
