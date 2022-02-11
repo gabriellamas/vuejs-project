@@ -1,5 +1,5 @@
 <template>
-  <div>oi</div>
+  <div>Criar conta</div>
 </template>
 
 <script>
