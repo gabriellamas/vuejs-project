@@ -4,7 +4,7 @@
       <router-link to="/" class="logo">
         <img src="@/assets/ranek.svg" alt="ranek" />
       </router-link>
-      <router-link v-if="$store.state.login" to="/userpage" class="btn">
+      <router-link v-if="$store.state.login" to="/usuario" class="btn">
         {{ nome }}</router-link
       >
       <router-link v-else to="/login" class="btn"> Vender / Login </router-link>
@@ -17,7 +17,7 @@ export default {
   name: "TheHeader",
   computed: {
     nome() {
-      return this.$store.state.usuario.nome.replace(/ .*/, ""); //esse regex pega tudo depois do primeiro espaço, o replace pega isso e troca para nada
+      return this.$store.state.usuario.nome.replace(/ .*/, ""); //esse regex pega tudo depois do primeiro espaço, o replace pega isso e troca para nada ""
     },
   },
 };

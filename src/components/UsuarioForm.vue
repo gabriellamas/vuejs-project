@@ -1,10 +1,12 @@
 <template>
-  <p>Página do usuário {{ $store.state.usuario }}</p>
+  <section>
+    <h2>Usuario Form</h2>
+  </section>
 </template>
 
 <script>
 export default {
-  name: "Usuario",
+  name: "UsuarioForm",
 };
 </script>
 
