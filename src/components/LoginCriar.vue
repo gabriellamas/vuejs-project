@@ -6,7 +6,9 @@
         Criar Conta
       </button>
       <UsuarioForm v-else>
-        <button class="btn btn-form">Criar Usuário</button>
+        <button class="btn btn-form" @click.prevent="criarUsuario">
+          Criar Usuário
+        </button>
       </UsuarioForm>
     </transition>
   </section>
@@ -23,6 +25,11 @@ export default {
     return {
       criar: false,
     };
+  },
+  methods: {
+    criarUsuario() {
+      console.log(`oi`);
+    },
   },
 };
 </script>
