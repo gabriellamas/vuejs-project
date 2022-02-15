@@ -34,7 +34,7 @@ export default {
           "getUsuario",
           this.$store.state.usuario.email
         );
-        this.$router.push({ name: "usuario" });
+        this.$router.push("/usuario");
       } catch (error) {
         console.log(error);
       }
